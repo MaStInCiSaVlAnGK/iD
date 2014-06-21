@@ -12,7 +12,7 @@
         "default": true
     },
     {
-        "name": "IGC all maps",
+        "name": "IGC",
         "type": "tms",
         "template": "http://igc.tiles.ch.am/{zoom}/{x}/{y}.png",
         "scaleExtent": [
@@ -41,6 +41,38 @@
         ],
         "id": "IGC-FULL",
         "default": true
+    },
+    {
+        "name": "IGC (coordinates)",
+        "type": "tms",
+        "template": "http://igc-grid.tiles.ch.am/{zoom}/{x}/{y}.png",
+        "scaleExtent": [
+            14,
+            30
+        ],
+        "polygon": [
+            [
+                [
+                    2.1484,
+                    48.743
+                ],
+                [
+                    2.5986,
+                    48.743
+                ],
+                [
+                    2.5986,
+                    48.9732
+                ],
+                [
+                    2.1484,
+                    48.9732
+                ]
+            ]
+        ],
+        "id": "IGC-GRID",
+        "default": true,
+        "overlay": true
     },
     {
         "name": "Locator Overlay",
@@ -74,6 +106,161 @@
         "terms_url": "http://www.mapbox.com/about/maps/",
         "terms_text": "Terms & Feedback",
         "id": "Mapbox",
+        "default": true
+    },
+    {
+        "name": "Meudon (niveau 1)",
+        "type": "tms",
+        "template": "http://meudon-niv1.tiles.ch.am/{zoom}/{x}/{y}.png",
+        "scaleExtent": [
+            14,
+            30
+        ],
+        "polygon": [
+            [
+                [
+                    2.2,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.9
+                ],
+                [
+                    2.2,
+                    48.9
+                ]
+            ]
+        ],
+        "id": "MEUDON-1",
+        "default": true
+    },
+    {
+        "name": "Meudon (niveau 2)",
+        "type": "tms",
+        "template": "http://meudon-niv2.tiles.ch.am/{zoom}/{x}/{y}.png",
+        "scaleExtent": [
+            14,
+            30
+        ],
+        "polygon": [
+            [
+                [
+                    2.2,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.9
+                ],
+                [
+                    2.2,
+                    48.9
+                ]
+            ]
+        ],
+        "id": "MEUDON-2",
+        "default": true
+    },
+    {
+        "name": "Meudon (niveau 3)",
+        "type": "tms",
+        "template": "http://meudon-niv3.tiles.ch.am/{zoom}/{x}/{y}.png",
+        "scaleExtent": [
+            14,
+            30
+        ],
+        "polygon": [
+            [
+                [
+                    2.2,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.9
+                ],
+                [
+                    2.2,
+                    48.9
+                ]
+            ]
+        ],
+        "id": "MEUDON-3",
+        "default": true
+    },
+    {
+        "name": "Meudon (niveau 4-5)",
+        "type": "tms",
+        "template": "http://meudon-niv45.tiles.ch.am/{zoom}/{x}/{y}.png",
+        "scaleExtent": [
+            14,
+            30
+        ],
+        "polygon": [
+            [
+                [
+                    2.2,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.9
+                ],
+                [
+                    2.2,
+                    48.9
+                ]
+            ]
+        ],
+        "id": "MEUDON-45",
+        "default": true
+    },
+    {
+        "name": "Meudon (tous niveaux)",
+        "type": "tms",
+        "template": "http://meudon.tiles.ch.am/{zoom}/{x}/{y}.png",
+        "scaleExtent": [
+            14,
+            30
+        ],
+        "polygon": [
+            [
+                [
+                    2.2,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.8
+                ],
+                [
+                    2.3,
+                    48.9
+                ],
+                [
+                    2.2,
+                    48.9
+                ]
+            ]
+        ],
+        "id": "MEUDON-FULL",
         "default": true
     },
     {
