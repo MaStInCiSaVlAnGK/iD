@@ -12,6 +12,7 @@ var ohauth = require('ohauth'),
 // object, IE<10's idea of [CORS](http://en.wikipedia.org/wiki/Cross-origin_resource_sharing),
 // does not support custom headers, which this uses everywhere.
 module.exports = function(o) {
+    console.log(o);
 
     var oauth = {};
 
@@ -203,7 +204,7 @@ module.exports = function(o) {
 
         o = _;
 
-        o.url = o.url || 'http://www.openstreetmap.org';
+        o.url = o.url || 'http://kta.ch.am';
         o.landing = o.landing || 'land.html';
 
         o.singlepage = o.singlepage || false;

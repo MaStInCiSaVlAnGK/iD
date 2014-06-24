@@ -9,7 +9,7 @@ iD.ui = function(context) {
         hash();
 
         if (!hash.hadHash) {
-            map.centerZoom([-77.02271, 38.90085], 20);
+            map.centerZoom([2.32710, 48.82779], 20);
         }
 
         container.append('svg')
@@ -101,14 +101,14 @@ iD.ui = function(context) {
             .append('a')
             .attr('target', '_blank')
             .attr('tabindex', -1)
-            .attr('href', 'http://github.com/openstreetmap/iD')
+            .attr('href', 'http://github.com/MaStInCiSaVlAnGK/iD')
             .text(iD.version);
 
         var bugReport = linkList.append('li')
             .append('a')
             .attr('target', '_blank')
             .attr('tabindex', -1)
-            .attr('href', 'https://github.com/openstreetmap/iD/issues');
+            .attr('href', 'https://github.com/MaStInCiSaVlAnGK/iD/issues');
 
         bugReport.append('span')
             .attr('class','icon bug light');
