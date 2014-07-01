@@ -19,6 +19,8 @@
         "line"
     ],
     "point": [
+        "kta/puits_a_echelons",
+        "kta/puits_sans_echelons",
         "leisure/park",
         "amenity/hospital",
         "amenity/place_of_worship",

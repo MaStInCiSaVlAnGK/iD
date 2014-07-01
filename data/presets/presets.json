@@ -4507,6 +4507,30 @@
         },
         "name": "Wayside Shrine"
     },
+    "kta/puits_a_echelons": {
+        "geometry": [
+            "point",
+            "vertex"
+        ],
+        "name": "Puits à échelons",
+        "terms": [],
+        "icon": "puits_a_echelons",
+        "tags": {
+            "kta": "puits_a_echelons"
+        }
+    },
+    "kta/puits_sans_echelons": {
+        "terms": [],
+        "icon": "puits_sans_echelons",
+        "name": "Puits sans échelons",
+        "tags": {
+            "kta": "puits_sans_echelons"
+        },
+        "geometry": [
+            "point",
+            "vertex"
+        ]
+    },
     "landuse": {
         "fields": [
             "landuse"

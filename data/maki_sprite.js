@@ -4,6 +4,7 @@ var _ = require('../js/lib/lodash');
 var maki = require('maki/www/maki-sprite.json');
 var lineIcons = require('./line-icons.json');
 var relationIcons = require('./relation-icons.json');
+var ktaIcons = require('./kta-icons.json');
 
 // Generate CSS
 var template = '.feature-{name}{background-position:-{x}px -{y}px;}\n';
@@ -42,6 +43,17 @@ _.forEach(lineIcons, function(position, name) {
 template = '.preset-icon-relation.feature-{name}{background-position:-{x}px -{y}px;}\n';
 
 _.forEach(relationIcons, function(position, name) {
+    css += template.replace('{name}', name)
+        .replace('{x}', position[0])
+        .replace('{y}', position[1]);
+
+    images[name] = images[name] || {};
+    images[name].relation = position;
+});
+
+template = '.preset-icon.feature-{name}{background-image:url(img/kta.png);background-position:-{x}px -{y}px;}\n';
+
+_.forEach(ktaIcons, function(position, name) {
     css += template.replace('{name}', name)
         .replace('{x}', position[0])
         .replace('{y}', position[1]);

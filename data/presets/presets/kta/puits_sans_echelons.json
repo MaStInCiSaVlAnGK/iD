@@ -1,0 +1,12 @@
+{
+  "terms": [],
+  "icon": "puits_sans_echelons",
+  "name": "Puits sans \u00e9chelons",
+  "tags": {
+    "kta": "puits_sans_echelons"
+  },
+  "geometry": [
+    "point",
+    "vertex"
+  ]
+}

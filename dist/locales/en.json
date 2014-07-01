@@ -1984,6 +1984,14 @@
                 "name": "Wayside Shrine",
                 "terms": ""
             },
+            "kta/puits_a_echelons": {
+                "name": "Puits à échelons",
+                "terms": ""
+            },
+            "kta/puits_sans_echelons": {
+                "name": "Puits sans échelons",
+                "terms": ""
+            },
             "landuse": {
                 "name": "Landuse",
                 "terms": ""

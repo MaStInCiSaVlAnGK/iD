@@ -179,3 +179,5 @@
 .preset-icon-relation.feature-restriction-only-straight-on{background-position:-1220px -25px;}
 .preset-icon-relation.feature-restriction-only-left-turn{background-position:-1280px -25px;}
 .preset-icon-relation.feature-restriction-only-right-turn{background-position:-1340px -25px;}
+.preset-icon.feature-puits_sans_echelons{background-image:url(img/kta.png);background-position:-0px -0px;}
+.preset-icon.feature-puits_a_echelons{background-image:url(img/kta.png);background-position:-24px -0px;}

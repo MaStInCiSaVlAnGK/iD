@@ -1,0 +1,12 @@
+{
+  "geometry": [
+    "point",
+    "vertex"
+  ],
+  "name": "Puits \u00e0 \u00e9chelons",
+  "terms": [],
+  "icon": "puits_a_echelons",
+  "tags": {
+    "kta": "puits_a_echelons"
+  }
+}

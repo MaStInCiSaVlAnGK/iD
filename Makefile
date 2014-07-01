@@ -5,7 +5,8 @@ all: \
 	dist/iD.js \
 	dist/iD.min.js \
 	dist/img/line-presets.png \
-	dist/img/relation-presets.png
+	dist/img/relation-presets.png \
+	dist/img/kta.png
 
 DATA_FILES = $(shell find data -type f -name '*.json' -o -name '*.md')
 data/data.js: $(DATA_FILES) dist/locales/en.json dist/img/maki-sprite.png
@@ -100,7 +101,10 @@ dist/img/line-presets.png: svg/line-presets.svg
 dist/img/relation-presets.png: svg/relation-presets.svg
 	if [ `which inkscape` ]; then $(SPRITE) --export-png=$@ $<; else echo "Inkscape is not installed"; fi;
 
-dist/img/maki-sprite.png: ./node_modules/maki/www/images/maki-sprite.png
+dist/img/kta.png: svg/kta.svg
+	if [ `which inkscape` ]; then $(SPRITE) --export-png=$@ $<; else echo "Inkscape is not installed"; fi;
+
+dist/img/maki-sprite.png: ./node_modules/maki/www/images/maki-sprite.png svg/kta.svg data/kta-icons.json
 	cp $< $@
 	node data/maki_sprite
 
